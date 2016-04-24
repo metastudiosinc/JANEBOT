@@ -9,6 +9,7 @@ module.exports = (robot) ->
     build = spawn 'ansible', ['all','-m','ping']
     build.stdout.on 'data', (data) -> res.send data.toString()
     build.stderr.on 'data', (data) -> res.send data.toString()
+    
 # heroku ps:restart --app metabot-slackbot
   robot.respond /wake meta(.*)/i, (res)->
     build = spawn 'heroku', ["ps:restart", "--app", "metabot-slackbot"]
