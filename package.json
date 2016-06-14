@@ -5,7 +5,8 @@
   "author": "Wes Etheredge <jwe@metastudiosinc.com>",
   "description": "I live among the ansible.",
   "scripts": {
-    "start": "HUBOT_SLACK_TOKEN=xoxb-23825470663-WOtJujgjWUKcsuWklacUA9h5 ./bin/hubot --adapter slack"
+    "start": "HUBOT_SLACK_TOKEN=xoxb-23825470663-WOtJujgjWUKcsuWklacUA9h5 ./bin/hubot --adapter slack",
+    "stop":"pkill hubot"
   },
   "dependencies": {
     "hubot": "^2.18.0",
