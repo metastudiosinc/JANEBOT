@@ -9,6 +9,7 @@
     "stop": "pkill hubot"
   },
   "dependencies": {
+    "cloudmanager": "git+https://github.com/themetastudiosteam/cloudmanager.git",
     "hubot": "^2.19.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-help": "^0.1.3",
